@@ -1,0 +1,8 @@
+services:
+  cleanup-ai-text:
+    image: michaelpc/cleanup-ai-text:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8501:8501"
